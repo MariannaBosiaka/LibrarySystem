@@ -1,16 +1,24 @@
 package main;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main {
-    public static void main(String[] args) throws SQLException {
-        new Main();
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("../views/login.fxml"));
+        primaryStage.setTitle("Hello World");
+        primaryStage.setResizable(false);
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
     }
 
-    public Main() throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/librarysys", "root", "m54#!br34A");
-        System.out.println("Successfully connected to database");
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }

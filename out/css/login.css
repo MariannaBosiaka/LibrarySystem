@@ -1,0 +1,24 @@
+.login-card{
+    -fx-background-color: #E3E4E8;
+    -fx-background-radius: 6;
+}
+
+.text-field{
+    -fx-border-color: #C5C8D3;
+    -fx-background-color: #E3E4E8;
+    -fx-border-radius: 7;
+    -fx-border-width: 2;
+}
+
+.text-field: focused{
+    -fx-border-color: #44444E;
+}
+
+.button-login{
+    -fx-background-color: #44444E;
+    -fx-background-radius: 7;
+}
+
+.forgot-button{
+    -fx-background-color: transparent;
+}

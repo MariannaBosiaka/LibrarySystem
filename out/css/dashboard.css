@@ -1,0 +1,21 @@
+.background-color{
+    -fx-background-color: #E3E4E8;
+}
+
+.menu{
+    -fx-background-color: #44444E;
+    -fx-background-radius: 0 40 40 0;
+}
+
+.buttons{
+    -fx-background-color: #44444E;
+}
+
+.buttons:hover{
+    -fx-background-color: #3C3C45;
+    -fx-cursor: hand;
+}
+
+.button_on_click{
+    -fx-background-color: #3C3C45;
+}
