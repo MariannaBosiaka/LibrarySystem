@@ -4,9 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import utils.DataBaseUtils;
+import javafx.scene.control.PasswordField;
+
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,22 +17,25 @@ import java.util.ResourceBundle;
 public class LoginController implements Initializable {
 
     @FXML
-    private Button logInButton;
+    private Button exitButton, logInButton; //button
     @FXML
-    private TextField usernameLogin;
+    private PasswordField passwordFieldLogin;
     @FXML
-    private TextField passwordLogin;
+    private TextField usernameFieldLogin;
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        logInButton.setOnAction(new EventHandler<ActionEvent>() {
+
+        exitButton.setCursor(Cursor.HAND);
+        logInButton.setCursor(Cursor.HAND);
+
+        exitButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
 
-                //connect to the database - after the button has been pressed
-                DataBaseUtils.connectToDataBase(actionEvent, usernameLogin.getText(), passwordLogin.getText());
-                //DataBaseUtils.changeScene(actionEvent, "../views/main.fxml");
+                System.exit(0);
+
             }
         });
     }

@@ -1,24 +1,15 @@
-.login-card{
-    -fx-background-color: #E3E4E8;
-    -fx-background-radius: 6;
+.login_fields{
+    -fx-background-color: transparent;
+    -fx-border-color:  #2B3467;
+    -fx-border-width: 0px 0px 1px 0px;
 }
 
-.text-field{
-    -fx-border-color: #C5C8D3;
-    -fx-background-color: #E3E4E8;
-    -fx-border-radius: 7;
-    -fx-border-width: 2;
+.login_button{
+    -fx-background-color:  #2B3467;
+    -fx-text-fill:  #FCFFE7;
+    -fx-border-radius: 5px;
 }
 
-.text-field: focused{
-    -fx-border-color: #44444E;
-}
-
-.button-login{
-    -fx-background-color: #44444E;
-    -fx-background-radius: 7;
-}
-
-.forgot-button{
+.login_close_button{
     -fx-background-color: transparent;
 }

@@ -51,7 +51,7 @@ public class DataBaseUtils {
         return view;
     }
 
-    public static void connectToDataBase(ActionEvent event, String username, String password)
+    public static void connectToDataBase()
     {
         connection = null;
 
