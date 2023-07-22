@@ -24,7 +24,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        DataBaseUtils.connectToDataBase();
+        DataBaseUtils.connectToDataBase(); //first connection to the database
         launch(args);
 
     }

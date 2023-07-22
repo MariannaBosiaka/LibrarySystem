@@ -56,7 +56,6 @@ public class DataBaseUtils {
         connection = null;
 
         try{
-            //connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/world", username, password);
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/librarysys", "root", "m54#!br34A");
             System.out.println("Successfully connected to the database");
         }

@@ -6,25 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d552dc5f-c8a3-4606-a560-de4789f9611d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/controller/LoginController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/LoginController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/img/logo_for_login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/utils/DataBaseUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/utils/DataBaseUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/views/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/logo_for_login.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/DataBaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/DataBaseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
