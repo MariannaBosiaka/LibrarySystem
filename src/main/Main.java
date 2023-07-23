@@ -32,7 +32,7 @@ public class Main extends Application {
                 primaryStage.setY(dragEvent.getScreenY() - pressEvent.getSceneY());
             });
         });
-        
+
         primaryStage.show();
 
         //3 lines of code to center the javafx window - !!In order to work UNDER THE .show() method!!

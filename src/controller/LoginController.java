@@ -1,5 +1,6 @@
 package controller;
 
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -38,6 +39,18 @@ public class LoginController extends DataBaseUtils implements Initializable {
 
         exitButton.setCursor(Cursor.HAND);
         logInButton.setCursor(Cursor.HAND);
+
+        usernameFieldLogin.styleProperty().bind(
+                Bindings
+                        .when(usernameFieldLogin.focusedProperty())
+                        .then("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);")
+                        .otherwise("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);"));
+
+        passwordFieldLogin.styleProperty().bind(
+                Bindings
+                        .when(usernameFieldLogin.focusedProperty())
+                        .then("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);")
+                        .otherwise("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);"));
 
         exitButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
