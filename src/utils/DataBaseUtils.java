@@ -60,7 +60,7 @@ public class DataBaseUtils {
             System.out.println("Successfully connected to the database");
         }
         catch (SQLException e) {
-            System.out.println("There is not such user in the database");
+            System.out.println("Could not connect to the database!");
         }
     }
 }
