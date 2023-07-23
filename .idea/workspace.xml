@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d552dc5f-c8a3-4606-a560-de4789f9611d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/dashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/controller/LoginController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/LoginController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/controller/LoginController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/LoginController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/utils/DataBaseUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/utils/DataBaseUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/DataBaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/DataBaseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/LibrarySystem&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/GitHub/LibrarySystem",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\LibrarySystem\src\css" />
