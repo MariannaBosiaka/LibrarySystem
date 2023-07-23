@@ -52,7 +52,7 @@ public class LoginController extends DataBaseUtils implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 DataBaseUtils.connectToDataBase();
-                if(passwordFieldLogin.getText());
+                //if(passwordFieldLogin.getText());
 
             }
         });
