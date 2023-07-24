@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
 import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
 import utils.DataBaseUtils;
@@ -28,6 +29,10 @@ public class LoginController extends DataBaseUtils implements Initializable {
     private PasswordField passwordFieldLogin;
     @FXML
     private TextField usernameFieldLogin;
+    @FXML
+    private Hyperlink signUpLink;
+    @FXML
+    private Hyperlink loginLink;
 
     private String loginQueries; //this string will contain login queries
 
@@ -91,9 +96,18 @@ public class LoginController extends DataBaseUtils implements Initializable {
 
             }
         });
+
+        signUpLink.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                DataBaseUtils.changeScene(event, "../views/signUp.fxml");
+            }
+        });
+//        loginLink.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+//                DataBaseUtils.changeScene(event, "../views/logIn.fxml");
+//            }
+//        });
     }
-
-
-
-
 }

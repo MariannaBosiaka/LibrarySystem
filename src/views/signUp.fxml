@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #2B3467;" BorderPane.alignment="CENTER">
          <children>
@@ -43,33 +43,24 @@
          </children>
       </AnchorPane>
    </left>
-   <right>
+   <center>
       <AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #FCFFE7;" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="usernameFieldLogin" layoutX="79.0" layoutY="169.0" prefHeight="30.0" prefWidth="260.0" promptText="Username or Email" styleClass="login_fields" stylesheets="@../css/login.css">
+            <TextField fx:id="usernameFieldSignUp" layoutX="79.0" layoutY="152.0" prefHeight="30.0" prefWidth="260.0" promptText="Username" styleClass="login_fields" stylesheets="@../css/login.css">
                <font>
                   <Font name="Calibri" size="16.0" />
                </font>
             </TextField>
-            <PasswordField fx:id="passwordFieldLogin" layoutX="79.0" layoutY="219.0" prefHeight="30.0" prefWidth="260.0" promptText="Password" styleClass="login_fields" stylesheets="@../css/login.css">
+            <PasswordField fx:id="emailFieldSignUp" layoutX="79.0" layoutY="203.0" prefHeight="30.0" prefWidth="260.0" promptText="Email" styleClass="login_fields" stylesheets="@../css/login.css">
                <font>
                   <Font name="Calibri" size="16.0" />
                </font>
             </PasswordField>
-            <Button fx:id="logInButton" layoutX="79.0" layoutY="275.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="260.0" styleClass="login_button" stylesheets="@../css/login.css" text="Log In">
+            <Button fx:id="signUpButton" layoutX="79.0" layoutY="314.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="260.0" styleClass="login_button" stylesheets="@../css/login.css" text="Sign Up">
                <font>
                   <Font name="Calibri" size="16.0" />
                </font>
             </Button>
-            <Hyperlink layoutX="130.0" layoutY="318.0" text="Forgot Your Password?" textFill="#2b3467">
-               <font>
-                  <Font name="Calibri" size="14.0" />
-               </font>
-            </Hyperlink>
-            <Hyperlink fx:id="signUpLink" layoutX="141.0" layoutY="454.0" text="New User? Sign Up" textFill="#2b3467">
-               <font>
-                  <Font name="Calibri" size="14.0" />
-               </font></Hyperlink>
             <HBox layoutX="64.0" layoutY="52.0" prefHeight="30.0" prefWidth="109.0">
                <children>
                   <ImageView fitHeight="34.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
@@ -84,7 +75,7 @@
                   </Label>
                </children>
             </HBox>
-            <Button fx:id="exitButton" layoutX="350.0" layoutY="14.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="22.0" styleClass="login_close_button" stylesheets="@../css/login.css">
+            <Button fx:id="exitButtonSignUp" layoutX="350.0" layoutY="14.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="22.0" styleClass="login_close_button" stylesheets="@../css/login.css">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -93,7 +84,16 @@
                   </ImageView>
                </graphic>
             </Button>
+            <PasswordField fx:id="passwordFieldSignUp" layoutX="79.0" layoutY="256.0" prefHeight="30.0" prefWidth="260.0" promptText="Password" styleClass="login_fields" stylesheets="@../css/login.css">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </PasswordField>
+            <Hyperlink fx:id="logInLink" layoutX="132.0" layoutY="455.0" text="Already a User? Log In" textFill="#2b3467">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></Hyperlink>
          </children>
       </AnchorPane>
-   </right>
+   </center>
 </BorderPane>
