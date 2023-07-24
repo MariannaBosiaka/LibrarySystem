@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d552dc5f-c8a3-4606-a560-de4789f9611d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/signUp.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/controller/LoginController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/LoginController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/controller/LoginController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/LoginController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/controller/LoginController$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/views/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/controller/SignUpController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/SignUpController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/controller/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/controller/SignUpController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SignUpController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

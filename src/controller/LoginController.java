@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
+import javafx.scene.layout.Pane;
 import utils.DataBaseUtils;
 
 
@@ -19,6 +20,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
+
+import java.util.ArrayList;
 
 
 public class LoginController extends DataBaseUtils implements Initializable {
@@ -36,14 +39,13 @@ public class LoginController extends DataBaseUtils implements Initializable {
 
     private String loginQueries; //this string will contain login queries
 
-
-
+    private ArrayList<Button> buttons = new ArrayList<>(); //this list contains all the buttons of a scene
+    private ArrayList<TextField> textFields = new ArrayList<>(); //this list contains all the textfields of a scene
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        exitButton.setCursor(Cursor.HAND);
-        logInButton.setCursor(Cursor.HAND);
+        Controller.setCursorToHand(exitButton, logInButton);
 
         usernameFieldLogin.styleProperty().bind(
                 Bindings
@@ -57,18 +59,8 @@ public class LoginController extends DataBaseUtils implements Initializable {
                         .then("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);")
                         .otherwise("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);"));
 
-        exitButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
 
-                System.exit(0);
-                try {
-                    connection.close();
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        });
+        Controller.exitFromApplication(exitButton); //
 
         logInButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override

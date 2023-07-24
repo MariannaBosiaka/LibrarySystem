@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
@@ -11,6 +12,7 @@ import javafx.scene.control.TextField;
 import utils.DataBaseUtils;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class SignUpController extends DataBaseUtils implements Initializable {
@@ -35,6 +37,10 @@ public class SignUpController extends DataBaseUtils implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        Controller.setCursorToHand(exitButtonSignUp, signUpButton);
+
+        Controller.exitFromApplication(exitButtonSignUp);//to exit from sign up scene
         logInLink.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -42,4 +48,6 @@ public class SignUpController extends DataBaseUtils implements Initializable {
             }
         });
     }
+
+
 }
