@@ -1,28 +1,21 @@
 package controller;
 
-import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
-import javafx.scene.layout.Pane;
 import utils.DataBaseUtils;
 
 
 import java.net.URL;
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
-
-import java.util.ArrayList;
-
 
 public class LoginController extends DataBaseUtils implements Initializable {
 
@@ -39,26 +32,22 @@ public class LoginController extends DataBaseUtils implements Initializable {
 
     private String loginQueries; //this string will contain login queries
 
-    private ArrayList<Button> buttons = new ArrayList<>(); //this list contains all the buttons of a scene
-    private ArrayList<TextField> textFields = new ArrayList<>(); //this list contains all the textfields of a scene
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        Controller.setCursorToHand(exitButton, logInButton);
 
-        usernameFieldLogin.styleProperty().bind(
-                Bindings
-                        .when(usernameFieldLogin.focusedProperty())
-                        .then("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);")
-                        .otherwise("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);"));
+        //add buttons to arraylist
+        Controller.buttons.add(exitButton);
+        Controller.buttons.add(logInButton);
 
-        passwordFieldLogin.styleProperty().bind(
-                Bindings
-                        .when(usernameFieldLogin.focusedProperty())
-                        .then("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);")
-                        .otherwise("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);"));
+        //add textfields to arraylist
+        Controller.textfields.add(usernameFieldLogin);
+        Controller.textfields.add(passwordFieldLogin);
 
+        //this STATIC method from Controller class sets the cursor to hand for all the buttons of this scene
+        Controller.setCursorToHand(Controller.buttons);
+
+        Controller.textFieldsStyle(Controller.textfields);
 
         Controller.exitFromApplication(exitButton); //
 

@@ -51,11 +51,6 @@
                   <Font name="Calibri" size="16.0" />
                </font>
             </TextField>
-            <PasswordField fx:id="emailFieldSignUp" layoutX="79.0" layoutY="203.0" prefHeight="30.0" prefWidth="260.0" promptText="Email" styleClass="login_fields" stylesheets="@../css/login.css">
-               <font>
-                  <Font name="Calibri" size="16.0" />
-               </font>
-            </PasswordField>
             <Button fx:id="signUpButton" layoutX="79.0" layoutY="314.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="260.0" styleClass="login_button" stylesheets="@../css/login.css" text="Sign Up">
                <font>
                   <Font name="Calibri" size="16.0" />
@@ -93,6 +88,11 @@
                <font>
                   <Font name="Calibri" size="14.0" />
                </font></Hyperlink>
+            <TextField fx:id="emailFieldSignUp" layoutX="79.0" layoutY="204.0" prefHeight="30.0" prefWidth="260.0" promptText="Email" styleClass="login_fields" stylesheets="@../css/login.css">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </TextField>
          </children>
       </AnchorPane>
    </center>

@@ -12,13 +12,17 @@ import javafx.scene.control.TextField;
 import utils.DataBaseUtils;
 
 import java.net.URL;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class SignUpController extends DataBaseUtils implements Initializable {
 
     @FXML
-    private PasswordField emailFieldSignUp;
+    private TextField emailFieldSignUp;
 
     @FXML
     private Button exitButtonSignUp;
@@ -35,12 +39,47 @@ public class SignUpController extends DataBaseUtils implements Initializable {
     @FXML
     private TextField usernameFieldSignUp;
 
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        Controller.setCursorToHand(exitButtonSignUp, signUpButton);
+        String insertDataSignUp = "INSERT INTO user(username, email, password) VALUES(?, ?, ?)";
+
+        //add buttons to arraylist
+        Controller.buttons.add(exitButtonSignUp);
+        Controller.buttons.add(signUpButton);
+
+        //add textfields to arraylist
+        Controller.textfields.add(emailFieldSignUp);
+        Controller.textfields.add(usernameFieldSignUp);
+        Controller.textfields.add(passwordFieldSignUp);
+
+        Controller.setCursorToHand(Controller.buttons);
+
+        Controller.textFieldsStyle(Controller.textfields);
 
         Controller.exitFromApplication(exitButtonSignUp);//to exit from sign up scene
+
+        signUpButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+
+                    PreparedStatement preparedStatement = connection.prepareStatement(insertDataSignUp);
+                    preparedStatement.setString(1, usernameFieldSignUp.getText());
+                    preparedStatement.setString(2, emailFieldSignUp.getText());
+                    preparedStatement.setString(3, passwordFieldSignUp.getText());
+                    System.out.println("added information to database");
+
+                    preparedStatement.execute();
+                    
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+        });
         logInLink.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

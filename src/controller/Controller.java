@@ -2,6 +2,7 @@
 
 package controller;
 
+import javafx.beans.binding.Bindings;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.Initializable;
@@ -12,9 +13,13 @@ import utils.DataBaseUtils;
 
 import java.net.URL;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class Controller extends DataBaseUtils implements Initializable {
+
+    public static ArrayList<Button> buttons = new ArrayList<>();
+    public static ArrayList<TextField> textfields = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -37,15 +42,22 @@ public class Controller extends DataBaseUtils implements Initializable {
     }
 
     //This method sets cursor to hand at hovering buttons - varying number of arguments
-    public static void setCursorToHand(Button... buttons){
+    public static void setCursorToHand(ArrayList<Button> buttons){
         for (Button button : buttons) {
             button.setCursor(Cursor.HAND);
         }
     }
 
-//    public static void textFieldStyle(TextField ){
-//
-//    }
+    public static void textFieldsStyle(ArrayList<TextField> textfields){
+        for(TextField textField: textfields){
+            textField.styleProperty().bind(
+                    Bindings
+                            .when(textField.focusedProperty())
+                            .then("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);")
+                            .otherwise("-fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);"));
+        }
+    }
+
 
 
 
